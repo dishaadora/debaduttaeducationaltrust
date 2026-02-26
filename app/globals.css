@@ -23,4 +23,201 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+.irdgaf-text{
+  background: linear-gradient(
+    170deg,
+    #818080 0%,
+    #d4d4d4 40%,
+    #ffffff 50%,
+    #d4d4d4 60%,
+    #888787 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 2.5s linear infinite;
+}
+@keyframes shine{
+  to{
+    background-position: -200% center;
+  }
+}
+/* =========================
+   GRID LINES BACKGROUND
+========================= */
+
+/* Shared line style */
+.grid-line {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* Vertical lines */
+.grid-line.vertical {
+  width: 1px;
+  height: 100%;
+}
+
+/* Horizontal lines */
+.grid-line.horizontal {
+  height: 1px;
+  width: 100%;
+}
+
+/* Shining animation */
+.grid-line::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.199),
+    transparent
+  );
+  animation: shine 4s linear infinite;
+  filter: blur(1px);
+}
+
+/* Horizontal shine direction */
+.grid-line.horizontal::before {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.477),
+    transparent
+  );
+}
+
+@keyframes shine {
+  from {
+    transform: translate(-100%, -100%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+
+.card-style{
+  height: 60vh;
+  width: 60vw;
+  margin-bottom: 50px;
+  background: white;
+  color: grey;
+  font-size: 36px;
+  border-radius: 30px;
+  border: 8px solid #ffffff;
+  padding: 1rem;
+  &:first-child {
+    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.463);
+  }
+}
+
+.shadows{
+  box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.378);
+}
+.radial-butter-charcoal-glow{
+  background: radial-gradient(
+    circle,
+    #eeebc4c7 0%,   /* blue center */
+    #233d4d 60%   /* black edges */
+  );
+}
+.bottom-glow{
+  background: linear-gradient(
+    to top,
+    rgba(30, 58, 138, 0.8) 0%,
+    rgba(30, 58, 138, 0.15) 45%,
+    transparent 70%
+  );
+}
+.bottom-glow-violet{
+  background: linear-gradient(
+    to top,
+    rgba(222, 132, 255, 0.8) 0%,
+    rgba(30, 58, 138, 0.15) 45%,
+    transparent 70%
+  );
+}
+
+.turquiose-bg{
+  background-color: #4e8ea2;
+}
+.charcoal-bg{
+  background-color: #233d4d;
+}
+
+.folder-shadow{
+  box-shadow: 0px -8px 8px #6e7278;
+}
+.moonlight-bg{
+  background-color: #f0ecdd;
+}
+.dark-moonlit-bg{
+  background-color: #a39974;
+}
+.frostblue-bg{
+  background-color: #8ba3c5;
+}
+.shadow-bottom{
+  box-shadow: 0px 8px 20px rgba(47, 46, 46, 0.599);
+}
+
+/* -------------------------------------------------------------- */
+.avatar-glow {
+      background: linear-gradient(145deg, #ffffff, #d6e6f5);
+      width: 64px;
+      height: 64px;
+      border-radius: 40% 60% 30% 70% / 50% 40% 60% 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1b3d56;
+      font-size: 2rem;
+      box-shadow: 
+        0 18px 25px -12px #1f3e55,
+        0 0 0 3px rgba(255,255,255,0.7) inset;
+      transform: rotate(-2deg);
+      transition: all 0.25s ease;
+    }
+
+    .avatar-glow:hover {
+      transform: rotate(0deg) scale(1.02);
+      box-shadow: 0 22px 30px -12px #0d3144;
+    }
+
+    .intro-text h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #162b38, #1d415b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+
+    .intro-text .badge {
+      background: rgba(255,255,255,0.3);
+      border-radius: 100px;
+      padding: 0.3rem 1rem 0.3rem 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: #1a405a;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.5);
+      margin-top: 0.3rem;
+    }
+
+    .badge i {
+      color: #2e6a95;
+    }
