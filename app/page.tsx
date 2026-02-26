@@ -14,6 +14,9 @@ import Certificates from "./Certificates";
 import Donation from "./Donation";
 import Gallery from "./Gallery";
 import Tforms from "./Tforms";
+import KeyObjectives from "./KeyObjectives";
+import "./globals.css";
+import AboutTrust from "./AboutTrust";
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(true);
@@ -55,11 +58,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={`${quicksand.className}h-fit`}>
+        <AboutTrust/>
+      </section>
       {/* TRUSTEES */}
         <section id="trustees" className="panel min-h-screen">
           <div className="outer">
             <div className="inner">
-              <div className="section-heading mt-8 py-8 relative overflow-hidden bg-white/30 backdrop-blur-2xl z-10">
+              <div className="section-heading py-8 relative overflow-hidden bg-white/30 backdrop-blur-2xl z-10">
                 <video
                       autoPlay
                       loop
@@ -76,12 +82,12 @@ export default function Home() {
                     <ScrollText text="The pillars of our trust, guiding us with their wisdom and dedication." className={`${quicksand.className} text-2xl text-neutral-200 flex justify-center mt-4`}/>
                     <div className="py-8 my-12 mx-16 px-8 rounded-2xl">
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                        <Trustees image="/members/dunga.jpeg" name="youwantmaar" role="Founder & Trustee" description="Founded Debadutta Educational Trust"/>
-                        <Trustees image="/members/mumzz.jpeg" name="youwantmaar" role="Trustee" description="Founded Debadutta Educational Trust"/>
-                        <Trustees image="/members/papadugu.jpeg" name="youwantmaar" role="Trustee" description="Founded Debadutta Educational Trust"/>
-                        <Trustees image="/members/dungasleeping.jpeg" name="youwantmaar" role="Trustee" description="Founded Debadutta Educational Trust"/>
-                        <Trustees image="/members/momdugu.jpeg" name="youwantmaar" role="Trustee" description="Founded Debadutta Educational Trust"/>
-                        <Trustees image="/members/mommy.jpeg" name="youwantmaar" role="Trustee" description="Founded Debadutta Educational Trust"/>
+                        <Trustees image="/members/mrbd.png" name="Bhagaban Dora" role="Founder & Chairman" description="Founded Debadutta Educational Trust"/>
+                        <Trustees image="/members/profilenotavailable.jpg" name="Pilla Padman Dora" role="Secretary" description="D'Mount Valley School"/>
+                        <Trustees image="/members/profilenotavailable.jpg" name="Chittaranjan Mohanty" role="Treasurer" description="description to be written"/>
+                        <Trustees image="/members/profilenotavailable.jpg" name="Prasanta Kumar Dora" role="Trustee" description="description to be written"/>
+                        <Trustees image="/members/profilenotavailable.jpg" name="Alekh Chandra Dora" role="Trustee" description="description to be written"/>
+                        <Trustees image="/members/profilenotavailable.jpg" name="Smitu Rani Nayak" role="Trustee" description="Software Engineer at TCS"/>
                       </div>
                     </div>
                 </div>
@@ -91,7 +97,7 @@ export default function Home() {
         </section>
 
       {/* ACTIVITIES */}
-        <section id="objectives" className="h-fit bg-white">
+        <section id="activities" className="h-fit">
           <div className="outer">
             <div className="inner">
               <div className="section-heading relative z-10 turquiose-bg border-3 border-amber-100">
@@ -119,6 +125,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+        {/* OBJECTIVES */}
+        <section id="objectives">
+          <KeyObjectives/>
         </section>
 
         {/* GALLERY */}
