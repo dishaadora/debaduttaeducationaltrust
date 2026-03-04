@@ -18,39 +18,8 @@ export default function Certificates(){
       
       {/* LEFT: stacked certificates */}
       <div className="leftContainer h-screen flex justify-center rounded-2xl moonlight-bg px-12 py-20 ml-12 mb-12 border-8 border-[#465c78]">
-        {/* <div className="relative w-[520px] h-[420px]">
-        {[0, 1, 2, 3, 4].map((i) => (
-          <div
-            key={i}
-            className="absolute inset-0 cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-2"
-            style={{
-              zIndex: 20 + i,
-              transform: `translateY(${i * 48}px)`,
-            }}
-            onClick={() => setActiveIndex(i)}
-          >
-            <CertStyle>
-              <Image
-                src={`/certificates/certificate-0${i + 1}.jpg`}
-                alt={`certificate-${i + 1}`}
-                fill
-                className="object-contain"
-              />
-            </CertStyle>
-          </div>
-        ))}
-      </div> */}
+        
       <div className="relative w-[520px] h-[420px]">
-
-        {/* <div className="absolute top-0 left-0 z-20 hover:-translate-y-2 transition">
-          <iframe
-            src="/certificates/pdf-01.pdf#toolbar=0"
-            className="w-[500px] h-[350px] rounded-xl shadow-xl border-4 border-white cert-one"
-            onClick={() => setActiveIndex(0)}
-            title="certificate-1"
-          />
-        </div> */}
-        {/* ------------------------------ */}
         <div
           className="absolute top-0 z-20 hover:-translate-y-2 transition border-4 border-[#465c78] rounded-xl cursor-pointer shadow-2xl"
           onClick={() => setActiveIndex(0)}

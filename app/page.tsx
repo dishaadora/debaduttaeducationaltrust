@@ -62,8 +62,6 @@ export default function Home() {
       </section>
       {/* TRUSTEES */}
         <section id="trustees" className="panel min-h-screen">
-          <div className="outer">
-            <div className="inner">
               <div className="section-heading py-8 relative overflow-hidden bg-white/30 backdrop-blur-2xl z-10">
                 <video
                       autoPlay
@@ -91,14 +89,10 @@ export default function Home() {
                     </div>
                 </div>
               </div>
-            </div>
-          </div>
         </section>
 
       {/* ACTIVITIES */}
         <section id="activities" className="h-fit">
-          <div className="outer">
-            <div className="inner">
               <div className="section-heading relative z-10 turquiose-bg border-3 border-amber-100">
                 <h1 className={`${quicksand.className} font-semibold py-8 flex justify-center items-center gap-4 border-b-3 border-b-amber-100 text-amber-100 shadow-bottom`}>
                   <ScrollText text="ACTIVITIES" className="text-6xl"/>
@@ -107,8 +101,6 @@ export default function Home() {
                     <div className="">
                       <i className="fa-solid fa-quote-left fa-xl pl-20 pb-1 text-amber-100"></i>
                       <div className="px-16 h-fit">
-                        {/* <ScrollText text="They are the step-stones that guide us towards brilliance." className={`${quicksand.className} text-3xl font-semibold text-blue-950`}/><br/>
-                        <ScrollText text="Take a look at our moto which will help you understand what we do and why we do it" className=/> */}
                         <p className={`${quicksand.className} text-2xl text-center font-semibold text-white`}>
                           The main objective is to respond to the needs of a rapidly<br/> growing business and education
                           sector in India <br/> by producing the quality and quantity<br/> of educated people sufficiently
@@ -122,9 +114,8 @@ export default function Home() {
                   <Objectives/>
                 </div>
               </div>
-            </div>
-          </div>
         </section>
+
         {/* OBJECTIVES */}
         <section id="objectives">
           <KeyObjectives/>
