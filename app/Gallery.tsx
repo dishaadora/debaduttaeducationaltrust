@@ -5,7 +5,7 @@ import { ScrollTrigger} from "gsap/all";
 import ScrollText from "./SliderText";
 import Image from "next/image";
 import "./globals.css";
-import {quintessential , meddon, quicksand} from '@/app/ui/fonts';
+import {quicksand} from '@/app/ui/fonts';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,6 +24,7 @@ export default function Gallery(){
 
             cards.forEach((card,index) => {
                 const scaleVal = distributor(index, card, cards);
+                // this is for scaling the cards as they scroll
                 gsap.to(card, {
                     scale: scaleVal,
                     ease: "none",
@@ -35,6 +36,7 @@ export default function Gallery(){
                     },
                 });
 
+                // pinning each card
                 ScrollTrigger.create({
                     trigger: card,
                     start: `top-=${index * spacer} top`,
@@ -51,9 +53,9 @@ export default function Gallery(){
     return(
         <>
         <div className="mt-44 p-10 flex flex-col items-center justify-center bg-linear-to-b from-[#233d4d] via-[#f0ecdd] via-30% to-[#8ba3c5]">
-            <ScrollText text="Look around the things we've done so far ..." className={`${quicksand.className} mb-12 ml-25 text-6xl text-[#eaebbd] font-semibold flex justify-center`}/>
-            <div ref={containerRef} className="container flex p-[100px]items-center justify-center min-h-screen">
-                <div className="cards ml-25">
+            <ScrollText text="Look around the things we've done so far ..." className={`${quicksand.className} mb-20 ml-25 text-6xl text-[#eaebbd] font-semibold flex justify-center`}/>
+            <div ref={containerRef} className="container mx-auto flex items-center justify-center min-h-screen px-4 sm:px-8 md:px-16 lg:px-24">
+                <div className="cards relative max-w-[900px] mx-auto">
                     <div className="card card-style">1
                         <Image src="/gallerypics/screenshot-01.png" fill alt="Gallery Image 1" className="rounded-3xl" />
                     </div>

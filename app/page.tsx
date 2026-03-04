@@ -86,15 +86,15 @@ export default function Home() {
 
       {/* ACTIVITIES */}
         <section id="activities" className="h-fit">
-              <div className="section-heading relative z-10 turquiose-bg border-3 border-amber-100">
-                <h1 className={`${quicksand.className} font-semibold py-8 flex justify-center items-center gap-4 border-b-3 border-b-amber-100 text-amber-100 shadow-bottom`}>
-                  <ScrollText text="ACTIVITIES" className="text-6xl"/>
+              <div className="section-heading relative z-10 bg-[#b7c1ca] border-3 border-amber-100">
+                <h1 className={`${quicksand.className} font-semibold py-8 flex justify-center items-center gap-4 border-b-3 border-b-amber-100 text-[#1f2a38] shadow-bottom`}>
+                  <ScrollText text="ACTIVITIES CONDUCTED" className="text-6xl"/>
                 </h1>
                 <div className="flex flex-row items-center justify-center">
                     <div className="">
                       <i className="fa-solid fa-quote-left fa-xl pl-20 pb-1 text-amber-100"></i>
                       <div className="px-16 h-fit">
-                        <p className={`${quicksand.className} text-2xl text-center font-semibold text-white`}>
+                        <p className={`${quicksand.className} text-2xl text-center font-semibold text-[#1f2a38]`}>
                           The main objective is to respond to the needs of a rapidly<br/> growing business and education
                           sector in India <br/> by producing the quality and quantity<br/> of educated people sufficiently
                           equipped<br/> with the requisite knowledge to solve the <br/> society’s problems in order to meet<br/> the
