@@ -37,7 +37,6 @@ export default function Home() {
   }, []);
   return (
     <>
-    {/* <div className="fixed min-h-screen inset-10 bg-black -z-10"/> */}
     <main className="charcoal-bg">
 
       <section id="about" className="panel relative w-full h-screen will-change-transform flex items-center justify-center px-16 mx-12 charcoal-bg">
@@ -87,7 +86,7 @@ export default function Home() {
                         <Trustees image="/members/profilenotavailable.jpg" name="Chittaranjan Mohanty" role="Treasurer" description="description to be written"/>
                         <Trustees image="/members/profilenotavailable.jpg" name="Prasanta Kumar Dora" role="Trustee" description="description to be written"/>
                         <Trustees image="/members/profilenotavailable.jpg" name="Alekh Chandra Dora" role="Trustee" description="description to be written"/>
-                        <Trustees image="/members/profilenotavailable.jpg" name="Smitu Rani Nayak" role="Trustee" description="Software Engineer at TCS"/>
+                        <Trustees image="/members/aniMASSI.jpeg" name="Smitu Rani Nayak" role="Trustee" description="Software Engineer"/>
                       </div>
                     </div>
                 </div>
