@@ -2,9 +2,9 @@ import {quicksand , quintessential} from "./ui/fonts";
 export default function Donation(){
     return(
         <>
-        <div className="flex flex-col gap-12 h-screen justify-center items-center">
+        <div className="flex flex-col gap-12 min-h-screen justify-center items-center">
             <div className="w-full">
-                <p className={`${quicksand.className} text-6xl font-semibold flex justify-center mx-20 rounded-[15px] text-[#b9cadf] py-4 mt-[20px]`}>Help us by donating to our cause</p>
+                <p className={`${quicksand.className} sm:text-3xl md:text-5xl font-semibold flex justify-center mx-20 rounded-[15px] text-[#b9cadf] py-4 mt-[20px]`}>Help us by donating to our cause</p>
                 <p className={`${quicksand.className} text-lg flex items-center justify-center`}>click on the button below to donate</p>
             </div>
             <div className="w-full flex justify-center items-center">
