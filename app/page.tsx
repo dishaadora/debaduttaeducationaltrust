@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { quintessential , quicksand } from '@/app/ui/fonts';
 import {meddon} from'@/app/ui/fonts';
 import Trustees from "./Trustees";
@@ -7,8 +6,6 @@ import Objectives from "./Objectives";
 import ScrollImage from "./SliderImage";
 import { useEffect, useRef, useState } from "react";
 import ScrollText from "./SliderText";
-import RevealSection from "./RevealSection";
-import BackgroundLines from "./BackgroundLines";
 import RevealHeading from "./RevParallax";
 import Certificates from "./Certificates";
 import Donation from "./Donation";
@@ -41,8 +38,6 @@ export default function Home() {
 
       <section id="about" className="panel relative w-full h-screen will-change-transform flex items-center justify-center px-16 mx-12 charcoal-bg">
         {/* HERO */}
-        <div className="outer">
-          <div className="inner">
             <div className=" section-heading flex flex-col gap-6">
               <ScrollImage/>
               <div className="flex flex-col items-center gap-6 text-center -mt-40  text-white">
@@ -54,8 +49,6 @@ export default function Home() {
                 </p>
               </div>          
             </div>
-          </div>
-        </div>
       </section>
       <section className={`${quicksand.className}h-fit`}>
         <AboutTrust/>
