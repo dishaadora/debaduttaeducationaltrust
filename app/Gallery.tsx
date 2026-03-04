@@ -53,7 +53,7 @@ export default function Gallery(){
     return(
         <>
         <div className="mt-44 p-10 flex flex-col items-center justify-center bg-linear-to-b from-[#233d4d] via-[#f0ecdd] via-30% to-[#8ba3c5]">
-            <ScrollText text="Look around the things we've done so far ..." className={`${quicksand.className} mb-20 ml-25 text-6xl text-[#eaebbd] font-semibold flex justify-center`}/>
+            <ScrollText text="Look around the things we've done so far ..." className={`${quicksand.className} mb-20 sm:text-3xl md:text-5xl lg:text-6xl text-[#eaebbd] font-semibold flex justify-center`}/>
             <div ref={containerRef} className="container mx-auto flex items-center justify-center min-h-screen px-4 sm:px-8 md:px-16 lg:px-24">
                 <div className="cards relative max-w-[900px] mx-auto">
                     <div className="card card-style">1
