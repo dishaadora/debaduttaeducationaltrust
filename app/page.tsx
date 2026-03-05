@@ -34,7 +34,7 @@ export default function Home() {
   }, []);
   return (
     <>
-    <main className="charcoal-bg">
+    <main className="charcoal-bg glass-scroll">
 
       <section id="about" className="panel relative w-full h-screen will-change-transform flex items-center justify-center px-16 mx-12 charcoal-bg">
         {/* HERO */}

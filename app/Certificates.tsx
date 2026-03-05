@@ -14,7 +14,7 @@ export default function Certificates(){
     ];
     
       return (
-        <div className="parent-div flex sm:flex-col lg:flex-row min-h-screen items-center justify-center w-full overflow-hidden frostblue-bg">
+        <div className="parent-div flex sm:flex-col lg:flex-row min-h-screen gap-8 items-center justify-center w-full overflow-hidden frostblue-bg">
       
       {/* LEFT: stacked certificates */}
       <div className="leftContainer h-screen w-full flex justify-center items-center rounded-2xl moonlight-bg lg:w-1/2 p-6 sm:p-10 lg:p-16 border-8 border-[#465c78]">
@@ -60,8 +60,8 @@ export default function Certificates(){
       
 
       {/* RIGHT: selected certificate */}
-      <div className="rightCont w-full lg:w-1/2 flex items-center justify-center min-h-screen frostblue-bg p-6 sm:p-10 lg:p-16">
-        <div className="relative w-full max-w-[900px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] rounded-xl px-4 border-4 border-neutral-200 overflow-hidden shadow-2xl shadow-neutral-800 bg-[#465c78]">
+      <div className="rightCont w-full lg:w-1/2 flex items-center justify-center min-h-screen frostblue-bg">
+        <div className="relative w-full max-w-[900px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[600px] rounded-xl px-4 border-4 border-neutral-200 overflow-hidden shadow-2xl shadow-neutral-800 bg-[#465c78]">
             {activeIndex !== null ? (
               <iframe
                 src={`${pdfFiles[activeIndex]}#toolbar=0&view=FitH`}
