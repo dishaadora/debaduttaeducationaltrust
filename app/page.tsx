@@ -1,19 +1,19 @@
 "use client";
 import { quintessential , quicksand } from '@/app/ui/fonts';
 import {meddon} from'@/app/ui/fonts';
-import Trustees from "./Trustees";
-import Objectives from "./Objectives";
-import ScrollImage from "./SliderImage";
+import Trustees from "./components/trustees/Trustees";
+import Objectives from "./components/activities/Objectives";
+import ScrollImage from "./components/hero/SliderImage";
 import { useEffect, useRef, useState } from "react";
 import ScrollText from "./SliderText";
-import RevealHeading from "./RevParallax";
-import Certificates from "./Certificates";
-import Donation from "./Donation";
-import Gallery from "./Gallery";
-import Tforms from "./Tforms";
-import KeyObjectives from "./KeyObjectives";
+import RevealHeading from "./RevealHeading";
+import Certificates from "./components/certificates/Certificates";
+import Donation from "./components/donate/Donation";
+import Gallery from "./components/gallery/Gallery";
+import Tforms from "./components/contact/Tforms";
+import KeyObjectives from "./components/objectives/KeyObjectives";
 import "./globals.css";
-import AboutTrust from "./AboutTrust";
+import AboutTrust from "./components/hero/AboutTrust";
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(true);
@@ -35,12 +35,11 @@ export default function Home() {
   return (
     <>
     <main className="charcoal-bg glass-scroll">
-
-      <section id="about" className="panel relative w-full h-screen will-change-transform flex items-center justify-center px-16 mx-12 charcoal-bg">
-        {/* HERO */}
-            <div className=" section-heading flex flex-col gap-6">
+      {/* HERO */}
+      <section id="about" className="relative w-full h-screen flex items-center justify-center px-16 charcoal-bg">
+            <div className="flex flex-col gap-6">
               <ScrollImage/>
-              <div className="flex flex-col items-center gap-6 text-center -mt-40  text-white">
+              <div className="flex flex-col items-center gap-6 text-center text-white">
                 <div className="z-20">
                   <RevealHeading text="Debadutta Educational Trust" className={`${quintessential.className} text-7xl text-white`}/>
                 </div>
@@ -50,9 +49,10 @@ export default function Home() {
               </div>          
             </div>
       </section>
-      <section className={`${quicksand.className}h-fit`}>
+      <section className={`${quicksand.className} h-fit`}>
         <AboutTrust/>
       </section>
+      
       {/* TRUSTEES */}
         <section id="trustees" className="panel min-h-screen">
               <div className="section-heading py-8 relative overflow-hidden bg-white/30 backdrop-blur-2xl z-10">

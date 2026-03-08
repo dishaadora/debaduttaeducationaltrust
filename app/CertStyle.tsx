@@ -1,5 +1,3 @@
-import "./globals.css";
-import { Quicksand } from "next/font/google";
 import { quicksand } from "./ui/fonts";
 type CertStyleProps = {
     title?: string

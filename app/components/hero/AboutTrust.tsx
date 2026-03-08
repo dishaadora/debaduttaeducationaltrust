@@ -1,7 +1,6 @@
 "use client";
 import {quicksand} from "@/app/ui/fonts";
-import ScrollText from "./SliderText";
-import "./globals.css";
+import ScrollText from "../../SliderText";
 
 export default function AboutTrust() {
   return (

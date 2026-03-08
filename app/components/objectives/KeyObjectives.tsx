@@ -1,6 +1,5 @@
 "use client";
-import { quicksand } from "./ui/fonts";
-import "./globals.css";
+import { quicksand } from "../../ui/fonts";
 
 export default function KeyObjectives() {
   const objectives = [

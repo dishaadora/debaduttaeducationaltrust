@@ -1,9 +1,6 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import CertStyle from "./CertStyle";
-import Image from "next/image";
-import "./globals.css";
-import { quicksand } from "./ui/fonts";
+import { useState } from "react";
+import { quicksand } from "../../ui/fonts";
 export default function Certificates(){
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     const pdfFiles = [

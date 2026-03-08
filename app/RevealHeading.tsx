@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import gsap, { random } from "gsap";
+import gsap from "gsap";
 
 interface RevealHeadingProps {
   text: string;

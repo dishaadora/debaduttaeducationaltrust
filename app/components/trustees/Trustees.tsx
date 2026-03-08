@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { quicksand , quintessential} from "@/app/ui/fonts";
-import "./globals.css";
+import { quicksand } from "@/app/ui/fonts";
 
 interface TrusteesProps{
     image: string;

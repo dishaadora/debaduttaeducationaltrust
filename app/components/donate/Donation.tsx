@@ -1,4 +1,4 @@
-import {quicksand , quintessential} from "./ui/fonts";
+import {quicksand} from "../../ui/fonts";
 export default function Donation(){
     return(
         <>

@@ -1,8 +1,6 @@
-import {quicksand, quintessential} from "@/app/ui/fonts";
-import { dot } from "node:test/reporters";
-import BlockHood from "./Block";
-import ScrollList from "./ScrollLIsts";
-import "./globals.css";
+import {quicksand} from "@/app/ui/fonts";
+import ScrollList from "../../ListScroller";
+
 export default function Objectives(){
     return(
         <>

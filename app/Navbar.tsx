@@ -1,8 +1,7 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import {useEffect, useState} from "react";
-import { quintessential, quicksand } from '@/app/ui/fonts';
+import { quicksand } from '@/app/ui/fonts';
 const sections = [
         "about",
         "trustees",
