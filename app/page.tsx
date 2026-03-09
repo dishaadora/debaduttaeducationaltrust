@@ -12,6 +12,7 @@ import Donation from "./components/donate/Donation";
 import Gallery from "./components/gallery/Gallery";
 import Tforms from "./components/contact/Tforms";
 import KeyObjectives from "./components/objectives/KeyObjectives";
+import TrustRender from './components/trustees/TrustRender';
 import "./globals.css";
 import AboutTrust from "./components/hero/AboutTrust";
 export default function Home() {
@@ -71,14 +72,7 @@ export default function Home() {
                     </h1>
                     <ScrollText text="The pillars of our trust, guiding us with their wisdom and dedication." className={`${quicksand.className} text-2xl text-neutral-200 flex justify-center mt-4`}/>
                     <div className="py-8 my-12 mx-16 px-8 rounded-2xl">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                        <Trustees image="/members/mrbd.png" name="Bhagaban Dora" role="Founder & Chairman" description="Founded Debadutta Educational Trust"/>
-                        <Trustees image="/members/profilenotavailable.jpg" name="Pilla Padman Dora" role="Secretary" description="D'Mount Valley School"/>
-                        <Trustees image="/members/profilenotavailable.jpg" name="Chittaranjan Mohanty" role="Treasurer" description="description to be written"/>
-                        <Trustees image="/members/profilenotavailable.jpg" name="Prasanta Kumar Dora" role="Trustee" description="description to be written"/>
-                        <Trustees image="/members/profilenotavailable.jpg" name="Alekh Chandra Dora" role="Trustee" description="description to be written"/>
-                        <Trustees image="/members/aniMASSI.jpeg" name="Smitu Rani Nayak" role="Trustee" description="Software Engineer"/>
-                      </div>
+                        <TrustRender/>
                     </div>
                 </div>
               </div>

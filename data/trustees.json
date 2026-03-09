@@ -1,0 +1,46 @@
+{
+    "trustees" : [
+        {
+            "id": 1,
+            "name" : "Bhagaban Dora",
+            "role" : "Founder and Chairmen",
+            "image" : "/members/mrbd.png",
+            "description" : "Founded Debadutta Educational Trust"
+        },
+        {
+            "id": 2,
+            "name" : "Pilla Padman Dora",
+            "role" : "Secretary",
+            "image" : "/members/profilenotavailable.jpg",
+            "description" : "D'Mount Valley School"
+        },
+        {
+            "id": 3,
+            "name" : "Chittaranjan Mohanty",
+            "role" : "Treasurer",
+            "image" : "/members/profilenotavailable.jpg",
+            "description" : "description to be written"
+        },
+        {
+            "id": 4,
+            "name" : "Prasanta Kumar Dora",
+            "role" : "Member",
+            "image" : "/members/profilenotavailable.jpg",
+            "description" : "description to be written"
+        },
+        {
+            "id": 5,
+            "name" : "Alekh Chandra Dora",
+            "role" : "Member",
+            "image" : "/members/profilenotavailable.jpg",
+            "description" : "description to be written"
+        },
+        {
+            "id": 6,
+            "name" : "Smitu Rani Nayak",
+            "role" : "Member",
+            "image" : "/members/aniMASSI.JPEG",
+            "description" : "Software Engineer"
+        }
+    ]
+}
