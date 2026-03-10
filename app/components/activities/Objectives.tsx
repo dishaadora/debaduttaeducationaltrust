@@ -1,5 +1,5 @@
 import {quicksand} from "@/app/ui/fonts";
-import ScrollList from "../../ListScroller";
+import ScrollList from "../../ui/ListScroller";
 
 export default function Objectives(){
     return(

@@ -1,7 +1,6 @@
 "use client";
 import { quintessential , quicksand } from '@/app/ui/fonts';
 import {meddon} from'@/app/ui/fonts';
-import Trustees from "./components/trustees/Trustees";
 import Objectives from "./components/activities/Objectives";
 import ScrollImage from "./components/hero/SliderImage";
 import { useEffect, useRef, useState } from "react";
