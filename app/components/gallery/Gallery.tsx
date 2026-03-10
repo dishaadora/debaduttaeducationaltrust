@@ -29,7 +29,7 @@ export default function Gallery(){
                     ease: "none",
                     scrollTrigger: {
                         trigger: card,
-                        start: "top top",
+                        start: "top center",
                         scrub: true,
                         invalidateOnRefresh: true,
                     },

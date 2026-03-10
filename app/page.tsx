@@ -2,8 +2,6 @@
 import { quintessential , quicksand } from '@/app/ui/fonts';
 import {meddon} from'@/app/ui/fonts';
 import Objectives from "./components/activities/Objectives";
-import ScrollImage from "./components/hero/SliderImage";
-import { useEffect, useRef, useState } from "react";
 import ScrollText from "./ui/SliderText";
 import RevealHeading from "./ui/RevealHeading";
 import Certificates from "./components/certificates/Certificates";
@@ -15,30 +13,12 @@ import TrustRender from './components/trustees/TrustRender';
 import "./globals.css";
 import AboutTrust from "./components/hero/AboutTrust";
 export default function Home() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setVisible(entry.isIntersecting);
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, []);
   return (
     <>
     <main className="charcoal-bg glass-scroll">
       {/* HERO */}
       <section id="about" className="relative w-full h-screen flex items-center justify-center px-16 charcoal-bg">
             <div className="flex flex-col gap-6">
-              <ScrollImage/>
               <div className="flex flex-col items-center gap-6 text-center text-white">
                 <div className="z-20">
                   <RevealHeading text="Debadutta Educational Trust" className={`${quintessential.className} text-7xl text-white`}/>
