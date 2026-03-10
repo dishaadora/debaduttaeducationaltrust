@@ -2,7 +2,7 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger} from "gsap/all";
-import ScrollText from "../../SliderText";
+import ScrollText from "../../ui/SliderText";
 import Image from "next/image";
 import {quicksand} from '@/app/ui/fonts';
 
