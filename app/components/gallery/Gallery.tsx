@@ -29,8 +29,8 @@ export default function Gallery(){
                     ease: "none",
                     scrollTrigger: {
                         trigger: card,
-                        start: "top center",
-                        scrub: true,
+                        start: "top top",
+                        scrub: 1,
                         invalidateOnRefresh: true,
                     },
                 });

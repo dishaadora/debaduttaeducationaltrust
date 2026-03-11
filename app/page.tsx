@@ -60,12 +60,12 @@ export default function Home() {
       {/* ACTIVITIES */}
         <section id="activities" className="h-fit">
               <div className="section-heading relative z-10 bg-[#b7c1ca] border-3 border-amber-100">
-                <h1 className={`${quicksand.className} font-semibold py-8 flex justify-center items-center gap-4 border-b-3 border-b-amber-100 text-[#1f2a38] shadow-bottom`}>
+                <h1 className={`${quicksand.className} font-semibold py-8 flex justify-center items-center gap-4 border-b-3 border-b-[#1f2a38] text-[#1f2a38] shadow-bottom`}>
                   <ScrollText text="ACTIVITIES CONDUCTED" className="text-6xl"/>
                 </h1>
-                <div className="flex flex-row items-center justify-center">
+                <div className="flex flex-row items-center justify-center moonlight-bg">
                     <div className="">
-                      <i className="fa-solid fa-quote-left fa-xl pl-20 pb-1 text-amber-100"></i>
+                      <i className="fa-solid fa-quote-left fa-xl pl-20 pb-1 text-[#1f2a38]"></i>
                       <div className="px-16 h-fit">
                         <p className={`${quicksand.className} text-2xl text-center font-semibold text-[#1f2a38]`}>
                           The main objective is to respond to the needs of a rapidly<br/> growing business and education
@@ -75,9 +75,11 @@ export default function Home() {
                           affordable costs.
                         </p>
                       </div>
-                      <i className="fa-solid fa-quote-right fa-xl ml-190 text-amber-100"></i>
+                      <i className="fa-solid fa-quote-right fa-xl ml-190 text-[#1f2a38]"></i>
                     </div>
-                  <Objectives/>
+                  <div className='border-l-3 border-l-[#1f2a38]'>
+                    <Objectives/>
+                  </div>
                 </div>
               </div>
         </section>
